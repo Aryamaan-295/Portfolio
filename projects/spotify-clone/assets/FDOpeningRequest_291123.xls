@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+ 
+
+<!-- Filename: FDONLRequestReceiptExcel.aspx -->
+
+<HTML>
+<HEAD>
+<TITLE>
+Fixed Deposit Request Receipt
+</TITLE>
+
+</HEAD>
+
+
+<table border="2"  width="80%" align="center" cellpadding="0" cellspacing="1" class = "table">
+  <tr> 
+    <td  class=head colspan=4 align=center> 
+      <center>
+        Fixed Deposit Request Advice - Provisional
+      </center>
+    </TD>
+  </tr>
+
+    <tr class="row3"> 
+    <th align=left width="15%">&nbsp; Debit Account</th>
+    <td align=left width="25%">&nbsp; <b>055210110002977</b></TD>
+    <TH align="left" width="15%">&nbsp; Fixed Deposit Account </TH>
+    <TD align="left" width="25%">&nbsp; <b>055256110005072</b></TD>
+    </tr>
+
+
+
+    <tr class="row2"> 
+        <th align=left>&nbsp; Fixed Deposit Account Branch </th>
+        <td align=left ><b>&nbsp; KARVE NAGAR</b></TD>
+    <th align=left>&nbsp; Fixed Deposit Scheme </th>
+    <td align=left ><b>&nbsp; DBD - 24 MONTHS</b></TD>        
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TR class="row3">
+    	<TH align="left" >&nbsp; Maturity Instruction</TH>
+    	<TD Align=left>&nbsp; <b>Close the Term Deposit A/C on maturity and credit the account</b></TD>	
+        
+    <TH align="left" >&nbsp; Interest Credit A/C No.</TH>
+    <TD><b>&nbsp; 055210110002977</TD>
+    
+    </TR>
+
+
+
+    <tr class="row2"> 
+        <td align=left colspan=4>&nbsp;</td>
+    </tr>
+    
+    <tr class="row3">
+    	<td align=left colspan=4>
+        <table border="1"  width="100%" align="center" cellpadding="0" cellspacing="2" class = "table">
+		<tr class="row1"> 
+			<th  class=head align=center> Deposit Date</Th>
+			<th  class=head align=center> Deposit Period</Th>
+			<th  class=head align=center> Rate (%)</Th>
+			<th  class=head align=center> Deposit Amt INR</Th>
+			<th  class=head align=center> Maturity Date</Th>
+			<th  class=head align=center> Maturity Amt INR</Th>
+		</tr>
+		<tr class="row2"> 
+			<td align=center> November 29, 2023</Td>
+			<td align=center> 
+				24 Months
+							
+			</Td>
+			<td align=center> 7.25 %</Td>
+			<td align=center> 
+				
+				&nbsp; 28500.00
+			</Td>
+			<td align=center> November 29, 2025</Td>
+			<td align=center> 
+				
+				&nbsp; 32904.00
+			</Td>
+		</tr>		
+        </table>
+        </td>
+    </tr>  
+    
+    <tr class="row2"> 
+        <td align=left colspan=4>&nbsp;</td>
+    </tr>    
+
+
+
+    <tr class="row3"> 
+        <th align=left>&nbsp; Deposit Amount (in words)</th>
+        <td align=left colspan=3><b>&nbsp; Rupees Twenty Eight thousand Five hundred and Paise Zero only.</b></TD>
+    </tr>
+    
+    <tr class="row2"> 
+        <td align=left colspan=4>&nbsp;</td>
+    </tr>   
+    
+    <tr class="row3"> 
+        <th align=left>&nbsp; Nomination Registered</th>
+        <td align=left colspan=3><b>&nbsp; 
+        
+		YES
+	
+        </b></TD>
+    </tr>
+
+
+    <tr class="row3"> 
+        <th align=left>&nbsp; Nominee's Name</th>
+        <td align=left colspan=3><b>&nbsp; Charusheela Anand Kavi</b></TD>
+    </tr>
+ 
+    
+    <tr class="row2"> 
+        <td align=left colspan=4>&nbsp;</td>
+    </tr>       
+    
+
+    <tr class="row3"> 
+        <td align=left colspan=4 >
+        <Font color="red" size = 2>&nbsp;Important : </font> Maturity amount is subject to TDS as applicable. The fixed deposit email advice will be sent to your
+        registered email id with the bank, within 2 working days of account opening. In case your email id is not updated with the bank, you are requested
+        to contact the nearest branch to update the same. 
+	<BR><BR>
+	
+
+        </td>
+    </tr>
+    
+    
+
+</TABLE>
+

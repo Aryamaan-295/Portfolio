@@ -15,29 +15,39 @@
     <div class="page">
         <div class="nav">
             <div class="nav-head">
-                <div class="nav-logo">
-                    <img src="/assets/nav-logo.png" alt="Logo" id="nav-logo">
+                <div class="nav-logo-div">
+                    <div class="nav-logo"></div>
                 </div>
                 <div class="nav-head-main">
                     Aryamaan Kavi
                 </div>
                 <div class="close" onclick="closeNav()">
-                    <img src="/assets/close-icon.png" alt="Close" id="nav-close">
+                    <div class="close-icon"></div>
                 </div>
             </div>
             <div class="menu">
                 <div class="quick-links">
-                    <a href="#About" class="links">About</a>
+                    <a href="#About" class="links active">About</a>
                     <a href="#Hobbies" class="links">Hobbies</a>
                     <a href="#Projects" class="links">Projects</a>
                     <a href="#Contact" class="links">Contact Me</a>
                 </div>
             </div>
+            <div class="options">
+                <div class="dark-mode">
+                    <input type="checkbox" name="Dark Mode" id="toggle" name="toggle">
+                    <label id="toggle-switch" for="toggle">
+                        <div class="thumb">
+                            <div class="thumb-image"></div>
+                        </div>
+                    </label>    
+                </div>
+            </div>
         </div>
     
         <div class="main">
-            <div class="open">
-                <img src="/assets/bar-icon.png" alt="Open" id="nav-open" onclick="openNav()">
+            <div class="open" onclick="openNav()">
+                <div class="open-icon"></div>
             </div>
             <div class="section" id="About">
                 <div class="about-img">
@@ -65,17 +75,23 @@
                     <div class="cards" id="hobby-card-2" onclick="location.href='/hobbies/piano.html'">
                         <div class="card-img" style="background-image: url('/assets/piano.jpeg');"></div>
                         <div class="card-title">Piano</div>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto aliquid eaque! Cum reprehenderit nulla architecto, similique voluptatum dolor quisquam quod ad, soluta quidem necessitatibus praesentium suscipit autem eaque illum.</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto aliquid eaque! Cum reprehenderit nulla architecto, similique voluptatum dolor quisquam quod ad, soluta quidem necessitatibus praesentium suscipit autem eaque illum.
+                        </div>
                     </div>
                     <div class="cards" id="hobby-card-3" onclick="location.href='/hobbies/swimming.html'">
                         <div class="card-img" style="background-image: url('/assets/swimming.jpeg');"></div>
                         <div class="card-title">Swimming</div>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
+                        </div>
                     </div>
                     <div class="cards" id="hobby-card-4" onclick="location.href='/hobbies/coding.html'">
                         <div class="card-img" style="background-image: url('/assets/coding.png');"></div>
                         <div class="card-title">Coding</div>
-                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,9 +100,27 @@
                     Projects
                 </div>
                 <div class="card-container">
-                    <div class="cards" id="project-card-1"></div>
-                    <div class="cards" id="project-card-2"></div>
-                    <div class="cards" id="project-card-3"></div>
+                    <div class="cards" id="project-card-1" onclick="location.href='/projects/calculator/Calculator.html'">
+                        <div class="card-img" style="background-image: url('/assets/calculator.png');"></div>
+                        <div class="card-title">Calculator</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptatibus sequi exercitationem mollitia culpa consectetur modi voluptates saepe laborum ab doloribus quae alias, est laudantium magni, repellat voluptatum repellendus eum?
+                        </div>
+                    </div>
+                    <div class="cards" id="project-card-2" onclick="location.href='/projects/spotify-clone/index.html'">
+                        <div class="card-img" style="background-image: url('/assets/spotify-logo.jpeg');"></div>
+                        <div class="card-title">Spotify</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae tempore quia, minus magnam commodi laborum quaerat velit totam soluta. Inventore vitae obcaecati id earum temporibus magni tenetur esse saepe!
+                        </div>
+                    </div>
+                    <div class="cards" id="project-card-3" onclick="location.href='/projects/periodic-table/index.html'">
+                        <div class="card-img" style="background-image: url('/assets/periodic-table.png');"></div>
+                        <div class="card-title">Periodic Table</div>
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate sunt tempore sequi odio. Molestiae dignissimos, exercitationem non mollitia ipsam iure magni? Error optio cumque, molestiae eius adipisci illum eaque.
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section" id="Contact">

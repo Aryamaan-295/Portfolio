@@ -1,0 +1,99 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1d1c;
+        color: white;
+    }
+
+    .nav {
+        background-color: #3f3e3d;
+    }
+    
+    .nav-logo-div {
+        width: 80px;
+        height: 50px;
+    }
+
+    .nav-logo {
+        background-image: url('/assets/nav-logo-dark.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -6px;
+        left: -8px;
+    }
+
+    .nav-head-main {
+        text-decoration-color: rgba(256,256,256,0.6);
+        margin: 0;
+        position: relative;
+        left: -5px;
+        top: -1px;
+    }
+
+    .links {
+        color: rgba(256,256,256,0.7);
+    }
+
+    .links:hover {
+        color: white;
+        background-color: #1e1d1c;
+        text-decoration-color: rgba(256,256,256,0.6);
+    }
+
+    .active {
+        background-color: #1e1d1c;
+        text-decoration-color: rgba(256,256,256,0.6);
+    }
+
+    .section-head {
+        border-bottom: rgba(256,256,256,0.6) 1px solid;
+    }
+
+    .card-container {
+        background-color: black;
+    }
+
+    .cards {
+        background-color: #1e1d1c;
+        box-shadow: 0 0 5px white;
+        background-image: linear-gradient(
+            50.143deg,
+            rgba(256,256,256,0.4),
+            transparent,
+            rgba(256,256,256,0.4)
+            );
+    }
+
+    .card-img {
+        box-shadow: 0 0 2px white;
+    }
+
+    #main-img {
+        border-color: white;
+    }
+
+    .close {
+        position: relative;
+        left: 5px;
+    }
+
+    .close:hover {
+        background-color: #1e1d1c;
+    }
+
+    .close-icon {
+        background-image: url('/assets/close-icon-dark.png');
+    }
+
+    .open:hover {
+        background-color: #3f3e3d;
+    }
+
+    .open-icon {
+        background-image: url('/assets/bar-icon-dark.png');
+    }
+
+
+}
