@@ -25,12 +25,14 @@ function getProgress() {
 function closeNav() {
     nav.style.display = 'none';
     nav.style.left = '-310px';
+    nav.style.transition = 'transform 2s linear';
     navOpen.style.display = 'inline';
 }
 
 function openNav() {
     nav.style.display = 'flex';
     nav.style.left = '0px';
+    nav.style.transition = 'transform 2s linear';
     navOpen.style.display = 'none';
 }
 
