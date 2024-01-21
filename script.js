@@ -5,20 +5,20 @@ const navClose = document.getElementsByClassName('close')[0];
 const navOpen = document.getElementsByClassName('open')[0];
 const nav = document.getElementsByClassName('nav')[0];
 const main = document.querySelectorAll('.main')[0];
-const section = document.querySelectorAll('.section')[0];
+const sections = document.querySelectorAll('.section');
+const toggle = document.getElementById('toggle');
 
 function getProgress() {          
     var topPos = main.scrollTop;
-    // Alternatively, you can use document.body.scrollTop || document.documentElement.scrollTop;
     
-    // Remaining left to scroll
+
     var remaining = main.scrollHeight - document.documentElement.clientHeight;
-    // scrollHeight is the measurement of the element's entire content, whether all the content is visible or not
-    // clientHeight is the inner height of the element, including padding
+
+
     
     var percentage = (topPos / remaining) * 100;
-    // console.log(main.scrollTop);
-    // console.log(remaining);
+
+
     return percentage;
 }
 
@@ -35,9 +35,10 @@ function openNav() {
 }
 
 main.addEventListener('scrollend', function() {
-    // currentScrollPercentage();
-    var index = Math.floor(getProgress()/33);
-    // console.log(index);
+    var num = sections.length - 1;
+
+    var index = Math.floor(getProgress()*num/100);
+
 
     for(let i = 0; i < linkList.length; i++) {
         if(i != index) {
@@ -47,7 +48,7 @@ main.addEventListener('scrollend', function() {
             linkList[i].classList.add('active');
         }
     }
-    // linkList[index].classList.add('active');
+
     
 
     
@@ -66,50 +67,16 @@ for(let i = 0; i < linkList.length; i++) {
 
 
 
+function changeStyle() {
+    var theme = document.getElementsByTagName("link")[0];
 
-function detectColorScheme(){
-    var theme="light";    //default to light
+    console.log(toggle.checked);
 
-    //local storage is used to override OS theme settings
-    if(localStorage.getItem("theme")){
-        if(localStorage.getItem("theme") == "dark"){
-            var theme = "dark";
-        }
-    } else if(!window.matchMedia) {
-        //matchMedia method not supported
-        return false;
-    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        //OS theme setting detected as dark
-        var theme = "dark";
+    if (toggle.checked) {
+        theme.setAttribute("href" , "style-dark.css");
     }
-
-    //dark theme preferred, set document with a `data-theme` attribute
-    if (theme=="dark") {
-        document.documentElement.setAttribute("data-theme", "dark");
+    else {
+        theme.setAttribute("href" , "style.css");    
     }
 }
-detectColorScheme();
 
-//identify the toggle switch HTML element
-const toggleSwitch = document.querySelector('#toggle-switch input[type=checkbox]');
-console.log(toggleSwitch)
-//function that changes the theme, and sets a localStorage variable to track the theme between page loads
-function switchTheme(e) {
-    if (e.target.checked) {
-        localStorage.setItem('theme', 'dark');
-        document.documentElement.setAttribute('data-theme', 'dark');
-        toggleSwitch.checked = true;
-    } else {
-        localStorage.setItem('theme', 'light');
-        document.documentElement.setAttribute('data-theme', 'light');
-        toggleSwitch.checked = false;
-    }    
-}
-
-//listener for changing themes
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-//pre-check the dark-theme checkbox if dark-theme is set
-if (document.documentElement.getAttribute("data-theme") == "dark"){
-    toggleSwitch.checked = true;
-}

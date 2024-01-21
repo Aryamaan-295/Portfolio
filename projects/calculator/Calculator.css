@@ -1,6 +1,7 @@
 body{
     background-color: #f0f0f0;
-    color: #212529
+    color: #212529;
+    overflow: hidden;
 }
 
 h1{
@@ -87,11 +88,11 @@ button:active{
     background-color: #999999;
 }
 
-#equals{
+.equals{
     background-color: orange;
 }
 
-#equals:hover{
+.equals:hover{
     background-color: #f9b729;
 }
 
@@ -100,4 +101,39 @@ button:active{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 35px;
     text-align-last: right;
+}
+
+.back {
+    position: fixed;
+    top: 50px;
+    left: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.back:hover {
+    background-color: #E0E1E2;
+    cursor: pointer;
+}
+
+.back-icon {
+    background-image: url('/projects/calculator/assets/back-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.back-link {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }

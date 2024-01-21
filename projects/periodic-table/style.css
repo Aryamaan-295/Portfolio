@@ -98,9 +98,8 @@ h1{
     text-align: middle;
     vertical-align: bottom;
     margin: 0;
-    text-overflow: ellipsis;
     background-color: inherit;
-    /* font-weight: 100; */
+    overflow-x: scroll;
 }
 
 .index-col{
@@ -119,29 +118,29 @@ h1{
 }
 
 #at-num-1, #at-num-6, #at-num-7, #at-num-8, #at-num-9, #at-num-15, #at-num-16, #at-num-17, #at-num-34, #at-num-35, #at-num-53, #rnm{
-    background-color: #2A4165;
+    background-color: #2f4971;
 } 
 
 #at-num-3, #at-num-11, #at-num-19, #at-num-37, #at-num-55, #at-num-87, #am{
-    background-color: #234d57;
+    background-color: #285964;
 }
 
 #at-num-4, #at-num-12, #at-num-20, #at-num-38, #at-num-56, #at-num-88, #aem{
-    background-color: #622E39;
+    background-color: #6e3340;
 }
 
 #at-num-21, #at-num-22, #at-num-23, #at-num-24, #at-num-25, #at-num-26, #at-num-27, #at-num-28, #at-num-29, #at-num-30, #at-num-39, #at-num-40, 
 #at-num-41, #at-num-42, #at-num-43, #at-num-44, #at-num-45, #at-num-46, #at-num-47, #at-num-48, #at-num-72, #at-num-73, #at-num-74, #at-num-75, 
 #at-num-76, #at-num-77, #at-num-78, #at-num-79, #at-num-80, #at-num-104, #at-num-105, #at-num-106, #at-num-107, #at-num-108, #tm{
-    background-color: #433C65;
+    background-color: #4a426f;
 }
 
 #at-num-5, #at-num-14, #at-num-32, #at-num-33, #at-num-51, #at-num-52, #me{
-    background-color: #523E1B;
+    background-color: #61491f;
 }
 
 #at-num-13, #at-num-31, #at-num-49, #at-num-50, #at-num-81, #at-num-82, #at-num-83, #at-num-84, #at-num-85, #ptm{
-    background-color: #2F4D47;
+    background-color: #365852;
 }
 
 #at-num-2, #at-num-10, #at-num-18, #at-num-36, #at-num-54, #at-num-86, #ng{
@@ -162,3 +161,43 @@ h1{
     background-color: #613B28;
 }
 
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 5px;
+}
+
+.back:hover {
+    background-color: rgb(68, 67, 67);
+    cursor: pointer;
+}
+
+.back-icon {
+    background-image: url('/projects/periodic-table/assets/angle-left-solid.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.back-link {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

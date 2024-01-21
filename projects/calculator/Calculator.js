@@ -1,4 +1,3 @@
-
 var recent_click;
 var sum = 0;
 var pastnum = 0;
@@ -48,6 +47,11 @@ window.addEventListener("keydown", function (event) {
     if (length < 15) {
         switch (event.key) {
 
+            case "d0":
+                recent_click = 'd0';
+                Calculate();
+                break;
+                
             case "0":
                 recent_click = 0;
                 Calculate();
@@ -273,7 +277,10 @@ function Calculate() {
             }
             if (recent_click == 0) {
                 sum = sum*10;
-            }                
+            }
+            if (recent_click == 'd0') {
+                sum = sum*100;
+            }
         }
 
         if (decimal == 1) {

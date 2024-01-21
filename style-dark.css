@@ -8,8 +8,8 @@ html {
 }
 
 body {
-    background-color: #f3f4f5;
-    color: black;
+    background-color: #1e1d1c;
+    color: white;
 }
 
 .page {
@@ -21,7 +21,7 @@ body {
 .nav {
     width: 300px;
     height: 100%;
-    background-color: #E0E1E2;
+    background-color: #3f3e3d;
     overflow: hidden;
     display: none;
     flex-direction: column;
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-logo {
-    background-image: url('/assets/nav-logo.png');
+    background-image: url('/assets/nav-logo-dark.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -64,7 +64,7 @@ body {
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 1px;
-    text-decoration-color: rgba(0,0,0,0.6);
+    text-decoration-color: rgba(256,256,256,0.6);
     margin: 0 0 0 10px;
 }
 
@@ -85,12 +85,12 @@ body {
 .open:hover {
     opacity: 0.8;
     cursor: pointer;
-    background-color: #E0E1E2;
+    background-color: #3f3e3d;
     transition: 0.2s ease-in-out;
 }
 
 .open-icon {
-    background-image: url('/assets/bar-icon.png');
+    background-image: url('/assets/bar-icon-dark.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 1.8rem;
@@ -116,12 +116,12 @@ body {
 .close:hover {
     opacity: 0.8;
     cursor: pointer;
-    background-color: #f3f4f5;
+    background-color: #1e1d1c;
     transition: 0.2s ease-in-out;
 }
 
 .close-icon {
-    background-image: url('/assets/close-icon.png');
+    background-image: url('/assets/close-icon-dark.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 1.8rem;
@@ -147,7 +147,7 @@ body {
     padding: 1.5rem;
     font-size: 1.2rem;
     text-decoration: none;
-    color: rgba(0,0,0,0.7);
+    color: rgba(256,256,256,0.7);
     border: none;
     border-radius: 15px;
     /* transition: 0.2s ease-in-out; */
@@ -155,21 +155,21 @@ body {
 }
 
 .links:hover {
-    color: rgba(0,0,0,1);
-    background-color: #f3f4f5;
+    color: white;
+    background-color: #1e1d1c;
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    text-decoration-color: rgba(0,0,0,0.6);
+    text-decoration-color: rgba(256,256,256,0.6);
     text-underline-offset: 5px;
 }
 
 .active {
     width: 120%;
-    color: rgba(0,0,0,1);
-    background-color: #f3f4f5;
+    color: white;
+    background-color: #1e1d1c;
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    text-decoration-color: rgba(0,0,0,0.6);
+    text-decoration-color: rgba(256,256,256,0.6);
     text-underline-offset: 5px;
     border-radius: 15px 0 0 15px;
 
@@ -294,7 +294,7 @@ body {
 
 .section-head {
     border: none;
-    border-bottom: rgba(0,0,0,0.6) 1px solid;
+    border-bottom: rgba(256,256,256,0.6) 1px solid;
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
@@ -304,7 +304,7 @@ body {
 }
 
 .card-container {
-    background-color: white;
+    background-color: black;
     border: none;
     border-radius: 20px;
     width: 100%;
@@ -321,17 +321,17 @@ body {
     border-radius: 20px;
     height: 330px;
     width: 275.5px;
-    background-color: #f3f4f5;
+    background-color: #1e1d1c;
     background-image: linear-gradient(
         50.143deg, 
-        rgba(112,128,144,0.7),
+        rgba(256,256,256,0.4),
         transparent,
-        rgba(112,128,144,0.7)
+        rgba(256,256,256,0.4)
         );
     display: inline-block;
     margin: 25px 10px;
     padding: 10px;
-    box-shadow: 0 0 7px black;
+    box-shadow: 0 0 7px white;
     text-align: center;
     transition: transform 0.1s linear;
 }
@@ -381,7 +381,7 @@ body {
 #main-img {
     width: 300px;
     height: 300px;
-    border: black 5px double;
+    border: white 5px double;
     border-radius: 10%;
 }
 
