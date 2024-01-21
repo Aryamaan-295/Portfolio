@@ -1,5 +1,3 @@
-
-
 const linkList = document.querySelectorAll('.links');
 const navClose = document.getElementsByClassName('close')[0];
 const navOpen = document.getElementsByClassName('open')[0];
@@ -81,4 +79,3 @@ function changeStyle() {
         theme.setAttribute("href" , "style.css");    
     }
 }
-

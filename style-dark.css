@@ -157,6 +157,7 @@ body {
 .links:hover {
     color: white;
     background-color: #1e1d1c;
+    width: fit-content;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-decoration-color: rgba(256,256,256,0.6);
@@ -174,6 +175,10 @@ body {
     border-radius: 15px 0 0 15px;
 
     transition: 1s;
+}
+
+.active:hover {
+    width: 120%;
 }
 
 .options {
@@ -307,6 +312,7 @@ body {
     background-color: black;
     border: none;
     border-radius: 20px;
+    box-shadow: 0 0 5px white;
     width: 100%;
     height: 400px;
     top: 20px;
@@ -376,6 +382,75 @@ body {
     height: 100px;
     text-wrap: wrap;
     overflow: hidden;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.form-container {
+    flex: 1;
+    display: grid;
+    border-right: 1px solid white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.other-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.socials:hover {
+    cursor: pointer;
+}
+
+.social-title {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.social-icons {
+    width: 30px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+#github {
+    background-image: url('/assets/github-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#insta {
+    background-image: url('/assets/instagram-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#in {
+    background-image: url('/assets/linkedin-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-img {
