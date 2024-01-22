@@ -1,204 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="mediaqueries.css"> -->
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="mediaqueries.css"> -->
 
-    <link rel="shortcut icon" href="/assets/nav-logo-dark.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/nav-logo-dark.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="page">
-        <div class="nav">
-            <div class="nav-head">
-                <div class="nav-logo-div">
-                    <div class="nav-logo"></div>
-                </div>
-                <div class="nav-head-main">
-                    Aryamaan Kavi
-                </div>
-                <div class="close" onclick="closeNav()">
-                    <div class="close-icon"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="quick-links">
-                    <a href="#Home" class="links active">Home</a>
-                    <a href="#About" class="links">About</a>
-                    <a href="#Hobbies" class="links">Hobbies</a>
-                    <a href="#Projects" class="links">Projects</a>
-                    <a href="#Contact" class="links">Contact Me</a>
-                </div>
-            </div>
-            <div class="options">
-                <div class="dark-mode">
-                    <input type="checkbox" name="Dark Mode" id="toggle" name="toggle" onclick="changeStyle()">
-                    <label id="toggle-switch" for="toggle">
-                        <div class="thumb">
-                            <div class="thumb-image"></div>
-                        </div>
-                    </label>    
-                </div>
-            </div>
-        </div>
-    
-        <div class="main">
-            <div class="open" onclick="openNav()">
-                <div class="open-icon"></div>
-            </div>
-            <div class="sections" onclick="closeNav()">
-                <div class="section" id="Home">
-                    <div class="section-head">
-                        Welcome!
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <div class="nav">
+                <div class="nav-head">
+                    <div class="nav-logo-div">
+                        <div class="nav-logo"></div>
+                    </div>
+                    <div class="nav-head-main">
+                        Aryamaan Kavi
+                    </div>
+                    <div class="close" onclick="closeNav()">
+                        <div class="close-icon"></div>
                     </div>
                 </div>
-                <div class="section" id="About">
-                    <div class="about-img">
-                        <img src="/assets/headshot.jpeg" alt="My Image" id="main-img">
+                <div class="menu">
+                    <div class="quick-links">
+                        <a href="#Home" class="links active">Home</a>
+                        <a href="#About" class="links">About</a>
+                        <a href="#Hobbies" class="links">Hobbies</a>
+                        <a href="#Projects" class="links">Projects</a>
+                        <a href="#Contact" class="links">Contact Me</a>
                     </div>
-                    <div class="about-main">
+                </div>
+                <div class="options">
+                    <div class="dark-mode">
+                        <input type="checkbox" name="Dark Mode" id="toggle" name="toggle" onclick="changeStyle()">
+                        <label id="toggle-switch" for="toggle">
+                            <div class="thumb">
+                                <div class="thumb-image"></div>
+                            </div>
+                        </label>    
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="open" onclick="openNav()">
+                    <div class="open-icon"></div>
+                </div>
+                <div class="sections" onclick="closeNav()">
+                    <div class="section" id="Home">
                         <div class="section-head">
-                            About Me
-                        </div>
-                        <div class="bio">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempore tempora laboriosam eveniet doloremque ab nemo eos aut asperiores molestias deserunt! Non consectetur eius earum, iste nesciunt placeat adipisci ratione.
+                            Welcome!
                         </div>
                     </div>
-                </div>
-                <div class="section" id="Hobbies">
-                    <div class="section-head">
-                        Hobbies
-                    </div>
-                    <div class="card-container">
-                        <div class="cards" id="hobby-card-1" onclick="location.href='/hobbies/reading/reading.html'">
-                            <div class="card-img" style="background-image: url('/assets/books.jpeg');"></div>
-                            <div class="card-title">Reading</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptate voluptatum molestias ullam, iure voluptates inventore a. Libero, quis similique rem dolores doloremque aliquid eligendi quibusdam, voluptatem eum, expedita ipsa.
-                                </div>
-                            </div>
+                    <div class="section" id="About">
+                        <div class="about-img">
+                            <img src="/assets/headshot.jpeg" alt="My Image" id="main-img">
                         </div>
-                        <div class="cards" id="hobby-card-2" onclick="location.href='/hobbies/piano/piano.html'">
-                            <div class="card-img" style="background-image: url('/assets/piano.jpeg');"></div>
-                            <div class="card-title">Piano</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
-                                </div>
+                        <div class="about-main">
+                            <div class="section-head">
+                                About Me
                             </div>
-                        </div>
-                        <div class="cards" id="hobby-card-3" onclick="location.href='/hobbies/swimming/swimming.html'">
-                            <div class="card-img" style="background-image: url('/assets/swimming.jpeg');"></div>
-                            <div class="card-title">Swimming</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards" id="hobby-card-4" onclick="location.href='/hobbies/coding/coding.html'">
-                            <div class="card-img" style="background-image: url('/assets/coding.png');"></div>
-                            <div class="card-title">Coding</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
-                                </div>
+                            <div class="bio">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempore tempora laboriosam eveniet doloremque ab nemo eos aut asperiores molestias deserunt! Non consectetur eius earum, iste nesciunt placeat adipisci ratione.
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section" id="Projects">
-                    <div class="section-head">
-                        Projects
-                    </div>
-                    <div class="card-container">
-                        <div class="cards" id="project-card-1" onclick="location.href='/projects/calculator/Calculator.html'">
-                            <div class="card-img" style="background-image: url('/assets/calculator.png');"></div>
-                            <div class="card-title">Calculator</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    A fully functional, sleek, calculator made using HTML, CSS and Javascript.
+                    <div class="section" id="Hobbies">
+                        <div class="section-head">
+                            Hobbies
+                        </div>
+                        <div class="card-container">
+                            <div class="cards" id="hobby-card-1" onclick="location.href='/hobbies/reading/reading.html'">
+                                <div class="card-img" style="background-image: url('/assets/books.jpeg');"></div>
+                                <div class="card-title">Reading</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptate voluptatum molestias ullam, iure voluptates inventore a. Libero, quis similique rem dolores doloremque aliquid eligendi quibusdam, voluptatem eum, expedita ipsa.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cards" id="project-card-2" onclick="location.href='/projects/spotify-clone/index.html'">
-                            <div class="card-img" style="background-image: url('/assets/spotify-logo.jpeg');"></div>
-                            <div class="card-title">Spotify</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    A front-end clone of the home page of the popular music streaming website Spotify.
+                            <div class="cards" id="hobby-card-2" onclick="location.href='/hobbies/piano/piano.html'">
+                                <div class="card-img" style="background-image: url('/assets/piano.jpeg');"></div>
+                                <div class="card-title">Piano</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cards" id="project-card-3" onclick="location.href='/projects/periodic-table/index.html'">
-                            <div class="card-img" style="background-image: url('/assets/periodic-table.png');"></div>
-                            <div class="card-title">Periodic Table</div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    An interactive periodic table created using CSS.
+                            <div class="cards" id="hobby-card-3" onclick="location.href='/hobbies/swimming/swimming.html'">
+                                <div class="card-img" style="background-image: url('/assets/swimming.jpeg');"></div>
+                                <div class="card-title">Swimming</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards" id="hobby-card-4" onclick="location.href='/hobbies/coding/coding.html'">
+                                <div class="card-img" style="background-image: url('/assets/coding.png');"></div>
+                                <div class="card-title">Coding</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque maxime iusto repellendus animi magnam minus consequatur, sunt fugiat neque. Animi dicta veritatis laudantium sit omnis voluptas, atque eligendi blanditiis!
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section" id="Contact">
-                    <div class="section-head">
-                        Contact Me
-                    </div>
-                    <div class="contact-options">
-                        <div class="form-container">
-                            <div class="form-head">
-                                Email
-                            </div>
-                            <div class="form">
-                                <form action="mailto:kaviaryamaan@gmail.com">
-                                    
-                                    
-                                    <input type="text" name="cc" id="cc">
-                                    <label for="cc">Cc :</label>
-                                    <input type="text" name="subject" id="subject">
-                                    <label for="subject">Subject :</label>
-                                    <textarea name="body" id="body" cols="30" rows="10" required></textarea>                               
-                                    <label for="body">Body :</label>
-                                    <input type="submit" value="Send" id="submit">
-                                </form>
-                            </div>
+                    <div class="section" id="Projects">
+                        <div class="section-head">
+                            Projects
                         </div>
-                        <div class="other-options">
-                            <div class="socials" onclick="location.href= 'https://github.com/Aryamaan-295'">
-                                <div class="social-icons" id="github"></div>
-                                <div class="social-title">
-                                    GitHub
+                        <div class="card-container">
+                            <div class="cards" id="project-card-1" onclick="location.href='/projects/calculator/Calculator.html'">
+                                <div class="card-img" style="background-image: url('/assets/calculator.png');"></div>
+                                <div class="card-title">Calculator</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        A fully functional, sleek, calculator made using HTML, CSS and Javascript.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="socials">
-                                <div class="social-icons" id="insta"></div>
-                                <div class="social-title">
-                                    Instagram
+                            <div class="cards" id="project-card-2" onclick="location.href='/projects/spotify-clone/index.html'">
+                                <div class="card-img" style="background-image: url('/assets/spotify-logo.jpeg');"></div>
+                                <div class="card-title">Spotify</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        A front-end clone of the home page of the popular music streaming website Spotify.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="socials" onclick="location.href='www.linkedin.com/in/aryamaan-kavi-020709295'">
-                                <div class="social-icons" id="in"></div>
-                                <div class="social-title">
-                                    LinkedIn
+                            <div class="cards" id="project-card-3" onclick="location.href='/projects/periodic-table/index.html'">
+                                <div class="card-img" style="background-image: url('/assets/periodic-table.png');"></div>
+                                <div class="card-title">Periodic Table</div>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        An interactive periodic table created using CSS.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
+                    <div class="section" id="Contact">
+                        <div class="section-head">
+                            Contact Me
+                        </div>
+                        <div class="contact-options">
+                            <div class="form-container">
+                                <div class="form-background">
+                                    <div class="form-head">
+                                        Email
+                                    </div>
+                                    <div class="form">
+                                        <form action="mailto:kaviaryamaan@gmail.com">
+                                            
+                                            
+                                            <input type="text" name="cc" id="cc">
+                                            <label for="cc">Cc :</label>
+                                            <input type="text" name="subject" id="subject">
+                                            <label for="subject">Subject :</label>
+                                            <textarea name="body" id="body" cols="30" rows="10" required></textarea>                               
+                                            <label for="body">Body :</label>
+                                            <input type="submit" value="Send" id="submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other-options">
+                                <div class="socials" onclick="location.href= 'https://github.com/Aryamaan-295'">
+                                    <div class="social-icons" id="github"></div>
+                                    <div class="social-title">
+                                        GitHub
+                                    </div>
+                                </div>
+                                <div class="socials">
+                                    <div class="social-icons" id="insta"></div>
+                                    <div class="social-title">
+                                        Instagram
+                                    </div>
+                                </div>
+                                <div class="socials" onclick="location.href='www.linkedin.com/in/aryamaan-kavi-020709295'">
+                                    <div class="social-icons" id="in"></div>
+                                    <div class="social-title">
+                                        LinkedIn
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

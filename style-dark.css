@@ -16,6 +16,11 @@ body {
     display: flex; 
     flex-direction: row;
     height: 100vh;
+    background-image: url('/assets/main-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
 }
 
 .nav {
@@ -30,6 +35,7 @@ body {
     position: relative;
     top: 0;
     left: -310px;
+    border-radius: 0 50px 50px 0;
 }
 
 .nav-logo-div {
@@ -103,7 +109,7 @@ body {
 
 .close {
     position: relative;
-    left: 1rem;
+    left: 0.5rem;
     /* top: 5px; */
     width: 2.0rem;
     height: 2.0rem;
@@ -309,7 +315,7 @@ body {
 }
 
 .card-container {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 5px white;
@@ -324,7 +330,7 @@ body {
 
 .cards {
     border: none;
-    border-radius: 20px;
+    border-radius: 18px;
     height: 330px;
     width: 275.5px;
     background-color: #1e1d1c;
@@ -394,10 +400,20 @@ body {
 }
 
 .form-container {
+    position: relative;
+    top: 10px;
     flex: 1;
     border-right: 1px solid white;
-    height: 100%;
+    height: fit-content;
     width: 100%;
+    padding: 10px;
+}
+
+.form-background {
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
     padding: 10px;
 }
 
@@ -472,11 +488,12 @@ form #submit {
     height: fit-content;
     width: fit-content;
     padding: 10px 30px;
-    background-color: #3f3e3d;
+    background-color: #a0a0a0;
     transition: transform 0.2s ease;
     color: white;
     opacity: 0.8;
     font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 form #submit:hover {

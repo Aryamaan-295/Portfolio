@@ -16,6 +16,9 @@ body {
     display: flex; 
     flex-direction: row;
     height: 100vh;
+    background-image: url('/assets/main-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav {
@@ -30,6 +33,7 @@ body {
     position: relative;
     top: 0;
     left: -310px;
+    border-radius: 0 50px 50px 0;
 }
 
 .nav-logo-div {
@@ -103,7 +107,7 @@ body {
 
 .close {
     position: relative;
-    left: 1rem;
+    left: 0.5rem;
     /* top: 5px; */
     width: 2.0rem;
     height: 2.0rem;
@@ -271,6 +275,7 @@ body {
     overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    
 }
 
 .about-main {
@@ -302,14 +307,14 @@ body {
     border-bottom: rgba(0,0,0,0.6) 1px solid;
     width: 100%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding-bottom: 5px;
     word-spacing: 3px;
     margin-bottom: 40px;
 }
 
 .card-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 5px black;
@@ -324,7 +329,7 @@ body {
 
 .cards {
     border: none;
-    border-radius: 20px;
+    border-radius: 18px;
     height: 330px;
     width: 275.5px;
     background-color: #f3f4f5;
@@ -394,10 +399,20 @@ body {
 }
 
 .form-container {
+    position: relative;
+    top: 10px;
     flex: 1;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     border-right: 1px solid black;
+    padding: 10px;
+}
+
+.form-background {
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
@@ -476,6 +491,7 @@ form #submit {
     background-color: #ccc;
     transition: transform 0.2s ease;
     color: black;
+    margin-top: 10px;
     opacity: 0.8;
     font-size: 1.2rem;
 }
