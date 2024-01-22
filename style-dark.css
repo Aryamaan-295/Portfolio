@@ -395,11 +395,94 @@ body {
 
 .form-container {
     flex: 1;
-    display: grid;
     border-right: 1px solid white;
     height: 100%;
     width: 100%;
     padding: 10px;
+}
+
+
+.form-head {
+    height: fit-content;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(11, 1.5rem);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+form input {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 2px white;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+form textarea {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 2px white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    
+}
+
+form #cc {
+    grid-row: 1/2;
+    grid-column: 2/ span 1;
+}
+
+form #cc+label {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+form #subject {
+    grid-row: 3/4;
+    grid-column: 2/ span 4;
+}
+
+form #subject+label {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+form #body {
+    grid-row: 5/9;
+    grid-column: 2/ span 4;
+}
+
+form #body+label {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+form #submit {
+    grid-row: 9/11;
+    grid-column: 2/4;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #3f3e3d;
+    transition: transform 0.2s ease;
+    color: white;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+form #submit:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    opacity: 1;
 }
 
 .other-options {

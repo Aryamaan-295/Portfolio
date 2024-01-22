@@ -13,37 +13,55 @@ body {
     /* background-color: black; */
 }
 
+.buffer {
+    height: 10vh;
+    width: 100vw;
+    background-color: grey;
+}
+
+#header {
+    font-size: 10rem;
+    color: #f1f2f3;
+    box-shadow: 0 0 10px black;
+    padding: 10px 50px;
+    animation: fly-in 2s linear 0 1 left none;
+}
+
 #section-1 {
-    background-image: url('/hobbies/reading/assets/page.jpg');
+    background-image: url('/hobbies/reading/assets/book-bg-1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px 0px 100px  black inset;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #section-2 {
-    background-image: url('/hobbies/reading/assets/page.jpg');
+    background-image: url('/hobbies/reading/assets/book-bg-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 0 100px black inset;
+    opacity: 0.8;
 }
 
 #section-3 {
-    background-image: url('/hobbies/reading/assets/page.jpg');
+    background-image: url('/hobbies/reading/assets/book-bg-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    box-shadow: 0 0 200px black inset;
+    opacity: 0.75;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url("/hobbies/reading/assets/page.jpg");
-
-    /* Set a specific height */
-    min-height: 100vh;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@keyframes fly-in {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0px;
+    }
 }
