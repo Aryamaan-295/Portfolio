@@ -23,6 +23,8 @@ body {
     border: none;
     box-shadow: 0 0 5px white;
     opacity: 0.6;
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
 }
 
 .back:hover {
@@ -48,6 +50,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
     /* background-color: black; */
 }
 
@@ -76,7 +80,10 @@ body {
     box-shadow: 0 0 10px black;
     padding: 10px 50px;
     background-color: rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
+    opacity: 0;
+    animation: 0.8s fade ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #info-1 {
@@ -90,6 +97,9 @@ body {
     font-weight: 600;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.4);
+    animation: 0.8s fly-in-right ease both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 #info-2 {
@@ -103,4 +113,40 @@ body {
     font-weight: 600;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
+    animation: 0.8s fly-in-left ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes fly-in-right {
+    0% {
+        transform: translateX(-800px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fly-in-left  {
+    0% {
+        transform: translateX(800px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
