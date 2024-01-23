@@ -28,7 +28,8 @@ body {
 .nav {
     width: 300px;
     height: 100%;
-    background-color: #3f3e3d;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     overflow: hidden;
     display: none;
     flex-direction: column;
@@ -125,7 +126,6 @@ body {
 .close:hover {
     opacity: 0.8;
     cursor: pointer;
-    background-color: #1e1d1c;
     transition: 0.2s ease-in-out;
 }
 
@@ -165,7 +165,8 @@ body {
 
 .links:hover {
     color: white;
-    background-color: #1e1d1c;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     width: fit-content;
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -176,7 +177,8 @@ body {
 .active {
     width: 120%;
     color: white;
-    background-color: #1e1d1c;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-decoration-color: rgba(256,256,256,0.6);

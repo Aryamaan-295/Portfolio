@@ -151,3 +151,23 @@ body {
         transform: translateX(0px);
     }
 }
+
+@media (max-width:700px) {
+    #header {
+        font-size: 5rem;
+    }
+    
+    #info-1 {
+        animation: none;
+        left: auto;
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    #info-2 {
+        animation: none;
+        right: auto;
+        width: 60%;
+        font-size: 1rem;
+    }
+}
