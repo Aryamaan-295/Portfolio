@@ -152,6 +152,12 @@ body {
     }
 }
 
+@media (max-width:769px) {
+    #header {
+        font-size: 6rem;
+    }
+}
+
 @media (max-width:700px) {
     #header {
         font-size: 5rem;
@@ -169,5 +175,23 @@ body {
         right: auto;
         width: 60%;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 426px) {
+    #header {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 376px) {
+    #header {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 321px) {
+    #header {
+        font-size: 3rem;
     }
 }

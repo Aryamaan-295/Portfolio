@@ -171,3 +171,9 @@ body {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 321px) {
+    #header {
+        font-size: 4rem;
+    }
+}

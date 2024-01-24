@@ -1,4 +1,20 @@
 @media (max-width: 426px) {
+    .nav {
+        width: 100vw;
+    }
+
+    .nav-head {
+        justify-content: space-around;
+    }
+
+    .active {
+        width: 150%;
+    }
+
+    .active:hover {
+        width: 150%;
+    }
+    
     #About {
         flex-direction: column-reverse;
         justify-content: center;
@@ -19,6 +35,11 @@
         overflow-x: hidden;
     }
 
+    #Contact {
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
     .contact-options {
         flex-direction: column;
     }
@@ -26,4 +47,86 @@
     .form-container {
         border: none;
     }
+
+    form {
+        grid-template-rows: repeat(11,1rem);
+    }
+
+    .other-options {
+        width: 90%;
+        top: 15px;
+        left: 0;
+    }
+
+    .socials {
+        margin: 10px 0;
+    }
+
+    .social-title {
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 376px) {
+    
+    .card-scroller {
+        margin: 0;
+    }
+
+    .cards {
+        width: 85%;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    .about-img {
+        transform: scale(0.8);
+    }
+
+    .cards {
+        margin-left: 8.5px;
+    }
+
+    .card-img {
+        background-size: cover;
+        background-position-x: -25px;
+    }
+
+    .form-background {
+        overflow: hidden;
+    }
+
+    form #subject {
+        grid-column: 2/2;
+    }
+
+    form label {
+        font-size: 1rem;
+        /* line-height: 1rem; */
+        width: 100%;
+    }
+
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social-icons {
+        margin: 0;
+    }
+
+    .social-title {
+        display: none;
+    }
+
 }

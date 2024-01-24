@@ -39,13 +39,15 @@ main.addEventListener('scrollend', function() {
 
     var index = Math.floor(getProgress()*num/100);
 
+    if (screen.width >= 426) {
 
-    for(let i = 0; i < linkList.length; i++) {
-        if(i != index) {
-            linkList[i].classList.remove('active');
-        }
-        if(i == index) {
-            linkList[i].classList.add('active');
+        for(let i = 0; i < linkList.length; i++) {
+            if(i != index) {
+                linkList[i].classList.remove('active');
+            }
+            if(i == index) {
+                linkList[i].classList.add('active');
+            }
         }
     }
 
