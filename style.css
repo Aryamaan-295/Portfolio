@@ -303,11 +303,19 @@ body {
 .about-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     height: 300px;
     margin-left: 1rem;
     font-size: 1.2rem;
+}
+
+.bio {
+    width: 95%;
+    word-spacing: 3px;
+    line-height: 1.5rem;
+    position: relative;
+    top: 75px;
 }
 
 .section {
@@ -331,7 +339,7 @@ body {
     text-align: center;
     font-size: 1.7rem;
     padding-bottom: 5px;
-    word-spacing: 3px;
+    word-spacing: 5px;
     margin-bottom: 40px;
 }
 
@@ -558,7 +566,6 @@ form #submit:hover {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border: none;
-    padding: 10px;
     border-radius: 20px;
     opacity: 0.8;
     transition: transform 0.2s;
@@ -570,9 +577,22 @@ form #submit:hover {
     transform: scale(1.01);
 }
 
-.social-title {
-    font-size: 1.7rem;
+.social-link {
+    font-size: 1.5rem;
     line-height: 24px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+}
+
+.social-link:active {
+    color: black;
 }
 
 .social-icons {

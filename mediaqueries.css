@@ -14,10 +14,21 @@
     .active:hover {
         width: 150%;
     }
+
+    .dark-mode {
+        bottom: 50px;
+    }
     
     #About {
         flex-direction: column-reverse;
         justify-content: center;
+    }
+
+    .bio {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        /* margin-bottom: 10px; */
     }
 
     .about-img {
@@ -62,7 +73,7 @@
         margin: 10px 0;
     }
 
-    .social-title {
+    .social-link {
         font-size: 1rem;
     }
     
@@ -74,6 +85,17 @@
 
 @media (max-width: 376px) {
     
+    .dark-mode {
+        bottom: 50px;
+    }
+
+    .bio {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        /* margin-bottom: 10px; */
+    }
+
     .card-scroller {
         margin: 0;
     }
@@ -82,12 +104,35 @@
         width: 85%;
         margin-left: 12px;
     }
+
+    .socials {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-link {
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-left: 32px;
+    }
+
+    .social-title {
+        display: none;
+    }
+
 }
 
 @media (max-width: 321px) {
 
+    .dark-mode {
+        bottom: 50px;
+    }
+    
     .about-img {
-        transform: scale(0.8);
+        transform: scale(0.7);
+        position: relative;
+        top: 25px;
     }
 
     .cards {
@@ -97,6 +142,27 @@
     .card-img {
         background-size: cover;
         background-position-x: -25px;
+    }
+
+    .bio {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        /* margin-bottom: 10px; */
+    }
+
+    #Contact {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    form {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    form input {
+        width: 80%;
+        height: 100%;
     }
 
     .form-background {
@@ -121,12 +187,12 @@
         justify-content: center;
     }
 
-    .social-icons {
-        margin: 0;
+    .social-link {
+        margin: 10px 0;
     }
 
-    .social-title {
-        display: none;
+    .social-icons {
+        margin: 0;
     }
 
 }
