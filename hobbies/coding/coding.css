@@ -170,4 +170,9 @@ body {
         width: 60%;
         font-size: 1rem;
     }
+
+    .back {
+        top: 20px;
+        left: 30px;
+    }
 }
