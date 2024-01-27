@@ -1,3 +1,84 @@
+@media (max-width: 1025px) {
+    .bio {
+        top: 30px;
+    }
+    
+    .social-icons {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 769px) {
+    
+
+    .section-head {
+        font-size: 1.7rem;
+    }
+
+    #About {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-main {
+        margin: 0;
+    }
+    
+    .bio {
+        top: 20px;
+        width: 100%;
+    }
+
+    .about-img {
+        transform: scale(0.95);
+    }
+
+    #Contact {
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    #Contact .section-head {
+        margin: 0;
+    }
+
+    .contact-options {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .form-container {
+        width: 80%;
+        border: none;
+    }
+
+    .other-options {
+        width: 75%;
+        height: 100%;
+        left: 0;
+        justify-content: space-evenly;
+    }
+
+    .socials {
+        margin: 10px 0;
+    }
+
+    .social-link {
+        font-size: 1rem;
+        line-height: 1rem;
+        height: 1rem;
+        /* margin: 10px 0; */
+    }
+
+    .social-icons {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+}
+
 @media (max-width: 426px) {
     .nav {
         width: 100vw;
@@ -57,6 +138,7 @@
 
     .form-container {
         border: none;
+        width: 100%;
     }
 
     form {
@@ -75,11 +157,13 @@
 
     .social-link {
         font-size: 1rem;
+        padding: 0 0 0 5px;
     }
     
     .social-icons {
         width: 24px;
         height: 24px;
+        margin-right: 10px;
     }
 }
 
@@ -93,7 +177,10 @@
         position: relative;
         top: 10px;
         width: 100%;
-        /* margin-bottom: 10px; */
+    }
+
+    .about-img {
+        transform: scale(0.8);
     }
 
     .card-scroller {
@@ -114,11 +201,15 @@
         justify-content: center;
         align-items: center;
         margin: 10px;
-        margin-left: 32px;
+        padding: 0;
     }
 
     .social-title {
         display: none;
+    }
+
+    .social-icons {
+        margin: 0;
     }
 
 }
@@ -162,7 +253,6 @@
 
     form input {
         width: 80%;
-        height: 100%;
     }
 
     .form-background {
@@ -189,6 +279,7 @@
 
     .social-link {
         margin: 10px 0;
+        padding: 0;
     }
 
     .social-icons {

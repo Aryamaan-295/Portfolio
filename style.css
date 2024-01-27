@@ -175,7 +175,7 @@ body {
 .active {
     width: 120%;
     color: rgba(0,0,0,1);
-    background-color: rgba(195, 192, 192, 0.0.329);
+    background-color: rgba(195, 192, 192, 0);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -280,7 +280,26 @@ body {
     overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.down-arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/down.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-img {
@@ -337,7 +356,8 @@ body {
     border-bottom: rgba(0,0,0,0.6) 1px solid;
     width: 100%;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.0rem;
+    font-weight: 600;
     padding-bottom: 5px;
     word-spacing: 5px;
     margin-bottom: 40px;
@@ -414,9 +434,10 @@ body {
 
 .card-content {
     width: 100%;
-    height: 100px;
+    height: 125px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -425,6 +446,10 @@ body {
     height: 100px;
     text-wrap: wrap;
     overflow: hidden;
+}
+
+.click {
+    font-weight: 600;
 }
 
 .contact-options {
@@ -478,7 +503,7 @@ form input {
     box-shadow: 0 0 5px black;
     font-size: 1rem;
     padding: 5px 10px;
-    height: 1.5rem;
+    height: 100%;
 }
 
 form textarea {
