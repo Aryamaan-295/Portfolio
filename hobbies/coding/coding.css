@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.back {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    left: 60px;
+    top: 40px;
+    border: none;
+    box-shadow: 0 0 5px white;
+    opacity: 0.6;
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
+}
+
+.back:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+#back-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 100px  black inset;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    /* background-color: black; */
+}
+
+.buffer {
+    height: 10vh;
+    width: 100vw;
+    background-color: grey;
+    z-index: 1;
+}
+
+#section-1 {
+    background-image: url('/hobbies/coding/assets/coding-bg-1.jpg');
+}
+
+#section-2 {
+    background-image: url('/hobbies/coding/assets/coding-bg-2.jpg');
+}
+
+#section-3 {
+    background-image: url('/hobbies/coding/assets/coding-bg-3.jpg');
+}
+
+#header {
+    font-size: 10rem;
+    color: #f1f2f3;
+    box-shadow: 0 0 10px black;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: 0.8s fade ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#info-1 {
+    font-size: 2rem;
+    color: #f1f2f3;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    left: 100px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: 0.8s fly-in-right ease both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+#info-2 {
+    font-size: 2rem;
+    color: #f1f2f3;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    right: 100px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: 0.8s fly-in-left ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes fly-in-right {
+    0% {
+        transform: translateX(-800px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fly-in-left  {
+    0% {
+        transform: translateX(800px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width:700px) {
+    #header {
+        font-size: 5rem;
+    }
+    
+    #info-1 {
+        animation: none;
+        left: auto;
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    #info-2 {
+        animation: none;
+        right: auto;
+        width: 60%;
+        font-size: 1rem;
+    }
+}
